@@ -2,16 +2,43 @@
 <html lang="en">
 <head>
     <title>Impress JS</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--CSS Sectction-->
+    <link href="css/reset.css" rel="stylesheet" />
     <link href="css/game.css" rel="stylesheet" />
     <!--Javascript Section-->
     <script src="Scripts/lib/game.js"></script>
-    <script src="Scripts/lib/impress.js"></script>
+    <!--<script src="Scripts/lib/impress.js"></script>-->
 </head>
-<body>
+<body onload="main();">
+    <div id="impress">
+        <!--First Slide-->
+        <div id="1" class="step side">
+            <div class="step-text">
+                <p>There's a time machine over there. Flip the switch?</p>
+                <p><a href="#2">Flip</a>it.</p>
+                <p><a href="#3">Wait</a> for you dad. who is scientist, to come home</p>
+            </div>
+        </div>
+        <!--Second Slide-->
+        <div id="2" class="step side" data-x="1500">
+            <div class="step-text">
+                <p>you went back in time it was fun</p>
+            </div>
+                <div class="menu"><p><a href="#1">Start Over</a></p></div>
+        </div>
+        <!--Third Slide-->
+        <div id="3" class="step side" data-x="-1500">
+            <div class="step-text">
+                <p>you hang arroung for a while and then your dad come home</p>
+                <p>Then he will help you with your homework</p>
+                <p>It was kind of fun, but not that much fun</p>
+            </div>
+            <div class="menu"><p><a href="#1">Start Over</a></p></div>
+        </div>
 
-</body>
+    </div>
+</body> 
 </html>
